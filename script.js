@@ -9,10 +9,11 @@ let state = {
     zipcode: ""
 };
 
-let savbtn = document.getElementById(savebutton);
+let savebtn = document.getElementById(savebutton);
 let firstnameInput = document.getElementById(firstname);
 let lastnameInput = document.getElementById(lastname);
-let petsnameInput = document.getElementById(phonenumber);
+let petsnameInput = document.getElementById(petsname);
+let phonenumberInput = document.getElementById(phonenumber);
 let emailInput = document.getElementById(email);
 let cityInput = document.getElementById(city);
 let zipcodeInput = document.getElementById(zipcode);
@@ -23,8 +24,18 @@ function handleSave(){
     state.name = name;
     state.lastname = lastnameInput;
     state.petsname = petsnameInput;
+    state.phonenumber = phonenumberInput;
     state.email = emailInput;
-    
-
-
+    state.city = cityInput;
+    state.zipcode =zipcodeInput;
+console.log("Add name" + state.name);
+console.log(state);
+firstnameInput.value = "";
+lastnameInput.value = "";
+petsnameInput.value = "";
+phonenumberInput.value = "";
+emailInput.value = "";
+cityInput.value = "";
+zipcodeInput.value = "";
 }
+savebtn.addEventListener("click", handleSave);
