@@ -13,40 +13,40 @@
 
     <body>
         <h1 style="text-align: center;">Pet Parent Contact Information</h1>
-        <form class="row g-3" style="margin-left: 5%; margin-right: 5%;">
+        <form action="index.html" class="row g-3" style="margin-left: 5%; margin-right: 5%;">
             <div class="col-md-6">
-                <label for="name" class="form-label">First Name</label>
+                <label for="name">First Name</label>
                 <input type="text" class="form-control" id="firstname" required>
             </div>
             <div class="col-md-6">
-                <label for="name" class="form-label">Last Name</label>
+                <label for="name">Last Name</label>
                 <input type="text" class="form-control" id="lastname" required>
             </div>
             <div class="col-md-6">
-                <label for="name" class="form-label">Pet's Name</label>
+                <label for="name">Pet's Name</label>
                 <input type="text" class="form-control" id="petsname" required>
             </div>
             <div class="col-md-6">
-                <label for="phone" class="form-label">Phone Number</label>
+                <label for="phone">Phone Number</label>
                 <input type="tel" class="form-control" id="phonenumber" required>
             </div>
             <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
+                <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" required>
             </div>
             <div class="col-md-3">
-                <label for="city" class="form-label">City</label>
+                <label for="city">City</label>
                 <input type="text" class="form-control" id="cityname" required>
             </div>
             <div class="col-md-3">
-                <label for="zip code" class="form-label">Zip Code</label>
+                <label for="zip code">Zip Code</label>
                 <input type="number" class="form-control" id="zipcode" required>
             </div>
         </form>
         <button type="button" class="btn btn-primary" id="savebutton"
             style="margin-top: 2%; margin-left: 5%;">Submit</button>
 
-        <div class="card">
+        <div class="card" style="width: auto;">
             <div class="card-body">
                 <p id="firstNameOutput"></p>
                 <p id="lastNameOutput"></p>
