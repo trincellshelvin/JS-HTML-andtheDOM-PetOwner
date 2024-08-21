@@ -38,4 +38,9 @@ emailInput.value = "";
 cityInput.value = "";
 zipcodeInput.value = "";
 }
-savebtn.addEventListener("click", handleSave);
+
+let user = petOwner(state.name, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipCode);
+user.status();
+user.render();
+
+savebutton.addEventListener("click", handleSave, createPetOwner);
