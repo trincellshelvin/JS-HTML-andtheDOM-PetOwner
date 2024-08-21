@@ -45,5 +45,5 @@ let user = createPetOwner(state.firstname, state.lastname, state.petsname, state
 user.status();
 user.render();
 
-savebtn.addEventListener("click", handleSave);
+
 savebtn.addEventListener("click", createPetOwner);

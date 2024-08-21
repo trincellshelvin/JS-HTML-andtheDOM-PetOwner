@@ -30,3 +30,5 @@ function createPetOwner(firstname, lastname, petsname, phonenumber, email, city,
     };
     return petOwner;
 }
+let p =createPetOwner("trincell", "shelvin", "pheobe", 2252252222, "trincell@funny.com", "baton rouge", 70806);
+console.log(p); p.status();
