@@ -12,7 +12,7 @@ function createPetOwner(firstname, lastname, petsname, phonenumber, email, city,
                 Email: ${this.email} City: ${this.city} Zip Code: ${this.zipcode}`);
         },
         render: function() {
-            let pOwnerFname = document.getElementById("firsNameOutput");
+            let pOwnerFname = document.getElementById("firstNameOutput");
             pOwnerFname.textContent = this.first;
             let pOwnerLname = document.getElementById("lastNameOutput");
             pOwnerLname.textContent = this.last;
