@@ -36,5 +36,7 @@ function createPet(nameInput, speciesInput, happinessInput) {
                 </div>
             `}
     }
+    console.log("created pets...");
+    status.pet();
     return pet;
 }
