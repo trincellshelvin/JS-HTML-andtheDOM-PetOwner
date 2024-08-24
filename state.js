@@ -12,8 +12,8 @@ let email = localStorage.getItem("email");
 console.log(email);
 let city = localStorage.getItem("city");
 console.log(city);
-let zipcode = localStorage.getItem("zipCode");
-console.log(zipCode);
+let zipcode = localStorage.getItem("zipcode");
+console.log(zipcode);
 
 state.firstname = firstname;
 state.lastname = lastname;
@@ -23,7 +23,7 @@ state.email = email;
 state.city = city;
 state.zipcode = zipcode;
 
-let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipCode)
+let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode)
 
 localStorage.setItem("firstname", state.firstname);
 localStorage.setItem("lastname", state.lastname);
