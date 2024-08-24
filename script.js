@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
     };
         savebtn.addEventListener("click", handleSave);
 
-}
+})
 
 
