@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
         savebtn.addEventListener("click", handleSave);
-
+        savebtn.addEventListener("click", createPetOwner);
+        
 })
 
 
