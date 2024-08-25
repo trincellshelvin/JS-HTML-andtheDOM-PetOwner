@@ -18,20 +18,23 @@ console.log(city);
 let zipcode = localStorage.getItem("zipcode");
 console.log(zipcode);
 
+
+
 state.firstname = firstname;
-state.lastname = lastname;
+state.lastname = lastname; 
 state.petsname = petsname;
 state.phonenumber = phonenumber;
 state.email = email;
 state.city = city;
 state.zipcode = zipcode;
 
+firstnameOutput.value = "";;
+lastnameOutput.value = "";
+petsnameOutput.value = "";
+phonenumberOutput.value = "";
+emailOutput.value = "";
+cityOutput.value = "";
+zipcodeOutput.value = "";
+
 let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode)
 
-localStorage.setItem("firstname", state.firstname);
-localStorage.setItem("lastname", state.lastname);
-localStorage.setItem("petsname", state.petsname);
-localStorage.setItem("phonenumber", state.phonenumber);
-localStorage.setItem("email", state.email);
-localStorage.setItem("city", state.city);
-localStorage.setItem("zipcode", state.zipcode );
