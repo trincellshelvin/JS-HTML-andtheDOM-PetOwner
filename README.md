@@ -2,39 +2,38 @@
 ## __ Day-1
 Assignment: Create a Pet Owner Sign-Up Form
 Objective:
-Create a simple HTML form that collects information about a pet owner and stores the data in a global JavaScript object called state. The form will not submit data to a server but will log the state object to the console.
+1. Create a simple HTML form that collects information about a pet owner and stores the data in a global JavaScript object called state. The form will not submit data to a server but will log the state object to the console.
 
 NOTE: This time, don't include a input with type of "submit" in your form. We don't want to submit the form. We want to capture the data in JavaScript. So instead of a "submit" input, use a button with type of "button".
 
-Instructions:
-[x] Create an HTML File:
-Create a file named index.html.
-Inside the <body>, create a form with fields for the pet owner's name, email, phone, city, zip code, and pet's name.
-Create a JavaScript File:
+## Instructions:
+-[x] 1. Create an HTML File:
++ Create a file named index.html.
++ Inside the <body>, create a form with fields for the pet owner's name, email, phone, city, zip code, and pet's name.
+  -[x] 2. Create a JavaScript File:
 
-[x]Create a file named script.js.
-proof of life: console.log "hello world" to make sure your script is connected.
-Define a global object called state.
-proof of life 1: console.log or console.table state so you can view your state in the console.
-proof of life 2: set a breakpoint to examine your state object. (It should be empty at this point.)
-Write a function named saveForm() Set an event listener on the button to fire saveForm onclick
-proof of life: console.log "button clicked!" to make sure your button is hooked up.
-Write code in your saveForm() that captures the form data and saves it into the state object.
-proof of life 1: console.log or console.table each data input as you write it. For example, check you get the name before moving on to the email.
-proof of life 2: set a breakpoint after getting the value your input. Check in Dev Tools to make sure your variables are set when you run it.
-Log the state object to the console after the all data is saved.
-Bonus Task (Optional):
+-[x] + Create a file named script.js.
+++ proof of life: console.log "hello world" to make sure your script is connected.
++ Define a global object called state.
+++ proof of life 1: console.log or console.table state so you can view your state in the console.
+++ proof of life 2: set a breakpoint to examine your state object. (It should be empty at this point.)
+++ Write a function named saveForm() Set an event listener on the button to fire saveForm onclick
+++ proof of life: console.log "button clicked!" to make sure your button is hooked up.
++ Write code in your saveForm() that captures the form data and saves it into the state object.
+++ proof of life 1: console.log or console.table each data input as you write it. For example, check you get the name before moving on to the email.
+  ++ proof of life 2: set a breakpoint after getting the value your input. Check in Dev Tools to make sure your variables are set when you run it.
+++ Log the state object to the console after the all data is saved.
+3. Bonus Task (Optional):
 
-Add a select element to the form for selecting the pet type (e.g., dog, cat, fish).
-Modify the saveForm() function to include the selected pet type in the state object.
-Declare a factory function for your pet owner with a status method to print the pet owner's data to the console. (You may make one for the pet, too!)
-Use Bootstrap or CSS flex to improve the appearance of your form.
-Connect Your HTML and JavaScript:
+++ Add a select element to the form for selecting the pet type (e.g., dog, cat, fish).
+++ Modify the saveForm() function to include the selected pet type in the state object.
+++ Declare a factory function for your pet owner with a status method to print the pet owner's data to the console. (You may make one for the pet, too!)
+++ Use Bootstrap or CSS flex to improve the appearance of your form.
++ Connect Your HTML and JavaScript:
+++ The <script> tag already links your script.js file to the index.html file.
+-[] Test Your Form:
 
-The <script> tag already links your script.js file to the index.html file.
-Test Your Form:
-
-Open index.html in a web browser.
+-[] Open index.html in a web browser.
 Fill out the form and click the "Sign Up" button.
 Check the console to see the contents of the state object.
 Remember to do a "proof of life" for each step of your program. Check that it works before moving on.
