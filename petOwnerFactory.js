@@ -12,23 +12,20 @@ function createPetOwner(firstname, lastname, petsname, phonenumber, email, city,
                 Email: ${this.email} City: ${this.city} Zip Code: ${this.zipcode}`);
         },
         render: function() {
-            let pOwnerFname = document.getElementById("firstNameOutput");
-            pOwnerFname.textContent = this.first;
-            let pOwnerLname = document.getElementById("lastNameOutput");
-            pOwnerLname.textContent = this.last;
-            let petsName = document.getElementById("petsNameOutput");
-            petsName.textContent = this.pets;
-            let phoneNumber = document.getElementById("phoneNumberOutput");
-            phoneNumber.textContent = this.phone;
-            let eMail = document.getElementById("emailOutput");
-            eMail.textContent = this.email;
-            let cIty = document.getElementById("cityOutput");
-            cIty.textContent = this.city;
-            let zipcode = document.getElementById("zipcodeOutput");
-            zipcode.textContent = this.zipcode;
+            document.getElementById("firstNameOutput").textContent = this.first;
+            document.getElementById("lastNameOutput").textContent = this.last;
+            document.getElementById("petsNameOutput").textContent = this.pets;
+            document.getElementById("phoneNumberOutput").textContent = this.phone;
+            document.getElementById("emailOutput").textContent = this.email;
+            document.getElementById("cityOutput").textContent = this.city;
+            document.getElementById("zipcodeOutput").textContent = this.zipcode;
         }
     };
     return petOwner;
 }
-let p =createPetOwner("trincell", "shelvin", "pheobe", 2252252222, "trincell@funny.com", "baton rouge", 70806);
-console.log(p); p.status();
+
+// Example usage
+// let p = createPetOwner("Trincell", "Shelvin", "Phoebe", "2252252222", "trincell@funny.com", "Baton Rouge", "70806");
+// console.log(p); 
+// p.status();
+

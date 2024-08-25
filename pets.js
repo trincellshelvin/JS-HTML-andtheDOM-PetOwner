@@ -13,17 +13,17 @@ function createPet(name, species, happiness, energy) {
     };
 }
 
-// Get references to DOM elements
+
 let addButton = document.getElementById("savePButton");
 let petsnameInput = document.getElementById("petsName");
 let petsspeciesInput = document.getElementById("petsSpecies");
 
-// Define the handleSave function
+
 function handleSave() {
     console.log("click to save");
     let name = petsnameInput.value;
     let species = petsspeciesInput.value;
-    let happiness = 10; // Assuming default values for happiness and energy
+    let happiness = 10; 
     let energy = 100;
     let pet = createPet(name, species, happiness, energy);
     pet.status();
@@ -32,7 +32,7 @@ function handleSave() {
     render();
 }
 
-// Define the render function
+
 function render() {
     let html = "";
     for (let i = 0; i < state.pets.length; i++) {
@@ -42,5 +42,5 @@ function render() {
     output.innerHTML = html;
 }
 
-// Add event listener to the button
+
 addButton.addEventListener("click", handleSave);

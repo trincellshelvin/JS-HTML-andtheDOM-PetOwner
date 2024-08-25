@@ -10,6 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let cityInput = document.getElementById("cityOutput");
     let zipcodeInput = document.getElementById("zipcodeOutput");
 
+    // Initialize state object
+    let state = {};
+
     function handleSave() {
         console.log("Save button was clicked");
 
@@ -25,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log(state.firstname);
             console.log(state);
 
+            // Clear input fields
             firstnameInput.value = "";
             lastnameInput.value = "";
             petsnameInput.value = "";
@@ -33,14 +37,35 @@ document.addEventListener("DOMContentLoaded", function () {
             cityInput.value = "";
             zipcodeInput.value = "";
 
+            // Create a new pet owner and call its methods
             let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode);
             user.status();
             user.render();
         }
+    }
+
+    // Add event listener to the save button
+    savebtn.addEventListener("click", handleSave);
+});
+
+// Define the createPetOwner function
+function createPetOwner(firstname, lastname, petsname, phonenumber, email, city, zipcode) {
+    return {
+        firstname: firstname,
+        lastname: lastname,
+        petsname: petsname,
+        phonenumber: phonenumber,
+        email: email,
+        city: city,
+        zipcode: zipcode,
+        status: function() {
+            console.log(`Owner: ${this.firstname} ${this.lastname}, Pet: ${this.petsname}`);
+        },
+        render: function() {
+            console.log(`Rendering owner: ${this.firstname} ${this.lastname}`);
+        }
     };
-        savebtn.addEventListener("click", handleSave);
-        savebtn.addEventListener("click", createPetOwner);
-        
-})
+}
+
 
 
