@@ -25,10 +25,10 @@ function createPet(nameInput, speciesInput, happinessInput) {
         rest() {
             this.energy = 100;
             console.log(`${this.name} has rested. Energy is now fully restored to 100.`);
-        }
+        },
         toHTML: function() {
             return `
-            <div Class="col-md-4">
+            <div class="col-md-4">
                 <div class="col">
                     <div class="card">
                         <h4>${this.name}</h4>
