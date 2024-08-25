@@ -1,5 +1,7 @@
 console.log("hi");
-let state = {};
+let state = {
+    pets: []
+};
 let firstname = localStorage.getItem("firstname");
 console.log(firstname);
 let lastname = localStorage.getItem("lastname");
