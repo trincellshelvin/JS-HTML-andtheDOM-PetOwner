@@ -18,6 +18,8 @@ console.log("hello world");
         localStorage.setItem("email", state.email);
         localStorage.setItem("city", state.city);
         localStorage.setItem("zipcode", state.zipcode);
+abc
+
 
         
 
