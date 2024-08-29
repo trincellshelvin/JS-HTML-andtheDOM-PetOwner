@@ -10,7 +10,7 @@ let state = {
     zipcode: ""
 };
 
-let savebtn = document.getElementById("savebutton");
+
 let firstnameInput = document.getElementById("firstname");
 let lastnameInput = document.getElementById("lastname");
 let petsnameInput = document.getElementById("petsname");
@@ -32,18 +32,12 @@ function handleSave() {
     console.log("Add name: " + state.firstname);
     console.log(state);
 
-    firstnameInput.value = "";
-    lastnameInput.value = "";
-    petsnameInput.value = "";
-    phonenumberInput.value = "";
-    emailInput.value = "";
-    cityInput.value = "";
-    zipcodeInput.value = "";
+    let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode);
+    user.status();
+    user.render();
 }
 
-let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode);
-user.status();
-user.render();
 
+let savebtn = document.getElementById("savebutton");
 
-savebtn.addEventListener("click", createPetOwner);
+savebtn.addEventListener("click", handleSave);

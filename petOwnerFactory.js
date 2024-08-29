@@ -7,28 +7,27 @@ function createPetOwner(firstname, lastname, petsname, phonenumber, email, city,
         email: email,
         city: city,
         zipcode: zipcode,
+        
         status: function () {
             console.log(`First Name: ${this.first} Last Name: ${this.last} Pet's Name: ${this.pets} Phone Number: ${this.phone} 
                 Email: ${this.email} City: ${this.city} Zip Code: ${this.zipcode}`);
         },
         render: function() {
-            let pOwnerFname = document.getElementById("firstNameOutput");
-            pOwnerFname.textContent = this.first;
-            let pOwnerLname = document.getElementById("lastNameOutput");
-            pOwnerLname.textContent = this.last;
-            let petsName = document.getElementById("petsNameOutput");
-            petsName.textContent = this.pets;
-            let phoneNumber = document.getElementById("phoneNumberOutput");
-            phoneNumber.textContent = this.phone;
-            let eMail = document.getElementById("emailOutput");
-            eMail.textContent = this.email;
-            let cIty = document.getElementById("cityOutput");
-            cIty.textContent = this.city;
-            let zipCoDe = document.getElementById("zipCodeOutput");
-            zipCoDe.textContent = this.zipcode;
+            let firstname = document.getElementById("firstNameOutput");
+            firstname.textContent = this.first;
+            let lastname = document.getElementById("lastNameOutput");
+            lastname.textContent = this.last;
+            let petsname = document.getElementById("petsNameOutput");
+            petsname.textContent = this.pets;
+            let phonenumber = document.getElementById("phoneNumberOutput");
+            phonenumber.textContent = this.phone;
+            let email = document.getElementById("emailOutput");
+            email.textContent = this.email;
+            let city = document.getElementById("cityOutput");
+            city.textContent = this.city;
+            let zipcode = document.getElementById("zipCodeOutput");
+            zipcode.textContent = this.zipcode;
         }
     };
     return petOwner;
 }
-let p =createPetOwner("trincell", "shelvin", "pheobe", 2252252222, "trincell@funny.com", "baton rouge", 70806);
-console.log(p); p.status();
