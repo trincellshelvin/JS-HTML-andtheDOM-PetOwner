@@ -1,5 +1,3 @@
-console.log("hello world");
-
 let savebtn = document.getElementById("savebutton");
 let firstnameInput = document.getElementById("firstname");
 let lastnameInput = document.getElementById("lastname");
@@ -35,9 +33,5 @@ function handleSave() {
 
 savebtn.addEventListener("click", handleSave);
 
-
-
-    
-    savebtn.addEventListener("click", handleSave);
 
 
