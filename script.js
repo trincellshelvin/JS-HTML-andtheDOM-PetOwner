@@ -5,7 +5,7 @@ console.log("hello world");
     let petsnameInput = document.getElementById("petsnameOutput");
     let phonenumberInput = document.getElementById("phonenumberOutput");
     let emailInput = document.getElementById("emailOutput");
-    let cityInput = document.getElementById("cityOutput");
+    let citynameInput = document.getElementById("citynameOutput");
     let zipcodeInput = document.getElementById("zipcodeOutput");
 
     function handleSave() {
@@ -16,13 +16,13 @@ console.log("hello world");
         localStorage.setItem("petsname", state.petsname);
         localStorage.setItem("phonenumber", state.phonenumber);
         localStorage.setItem("email", state.email);
-        localStorage.setItem("city", state.city);
+        localStorage.setItem("cityname", state.cityname);
         localStorage.setItem("zipcode", state.zipcode);
 
 
         
 
-        let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode);
+        let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.cityname, state.zipcode);
         user.status();
         user.render();
     }
@@ -32,7 +32,7 @@ console.log("hello world");
     savebtn.addEventListener("click", handleSave);
 
 
-function createPetOwner(firstname, lastname, petsname, phonenumber, email, city, zipcode) {
+function createPetOwner(firstname, lastname, petsname, phonenumber, email, cityname, zipcode) {
     return {
         firstname: "",
         lastname: "",

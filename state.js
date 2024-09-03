@@ -11,13 +11,13 @@ state.lastname = localStorage.getItem("lastname");
 state.petsname = localStorage.getItem("petsname");
 //console.log(state.petsname);
 state.phonenumber = localStorage.getItem("phonenumber");
-console.log(state.phonenumber);
+//console.log(state.phonenumber);
 state.email = localStorage.getItem("email");
 //console.log(state.email);
-state.city = localStorage.getItem("city");
-//console.log(state.city);
+state.cityname = localStorage.getItem("cityname");
+//console.log(state.cityname);
 state.zipcode = localStorage.getItem("zipcode");
 //console.log(state.zipcode);
 
-let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.city, state.zipcode);
+let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.cityname, state.zipcode);
 

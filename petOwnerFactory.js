@@ -17,7 +17,7 @@ function createPetOwner(firstname, lastname, petsname, phonenumber, email, city,
             document.getElementById("petsNameOutput").textContent = this.pets;
             document.getElementById("phoneNumberOutput").textContent = this.phone;
             document.getElementById("emailOutput").textContent = this.email;
-            document.getElementById("cityOutput").textContent = this.city;
+            document.getElementById("citynameOutput").textContent = this.city;
             document.getElementById("zipcodeOutput").textContent = this.zipcode;
         }
     };
