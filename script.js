@@ -30,9 +30,7 @@ function handleSave() {
     localStorage.setItem("cityname", state.cityname);
     localStorage.setItem("zipcode", state.zipcode);
 
-    let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.cityname, state.zipcode);
-    user.status();
-    user.render();
+    
 }
 
 savebtn.addEventListener("click", handleSave);
@@ -41,24 +39,5 @@ savebtn.addEventListener("click", handleSave);
 
     
     savebtn.addEventListener("click", handleSave);
-
-
-function createPetOwner(firstname, lastname, petsname, phonenumber, email, cityname, zipcode) {
-    return {
-        firstname: "",
-        lastname: "",
-        petsname: "",
-        phonenumber: "",
-        email: "",
-        cityname: "",
-        zipcode: "",
-        status: function () {
-            console.log(`Owner: ${this.firstname} ${this.lastname}, Pet: ${this.petsname}`);
-        },
-        render: function () {
-            console.log(`Rendering owner: ${this.firstname} ${this.lastname}`);
-        }
-    };
-}
 
 
