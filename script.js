@@ -20,13 +20,13 @@ function handleSave() {
         zipcode: zipcodeInput.value
     };
 
-    localStorage.setItem("firstname", state.firstname);
-    localStorage.setItem("lastname", state.lastname);
-    localStorage.setItem("petsname", state.petsname);
-    localStorage.setItem("phonenumber", state.phonenumber);
-    localStorage.setItem("email", state.email);
-    localStorage.setItem("cityname", state.cityname);
-    localStorage.setItem("zipcode", state.zipcode);
+    //localStorage.setItem("firstname", state.firstname);
+    //localStorage.setItem("lastname", state.lastname);
+    //localStorage.setItem("petsname", state.petsname);
+    //localStorage.setItem("phonenumber", state.phonenumber);
+    //localStorage.setItem("email", state.email);
+    //localStorage.setItem("cityname", state.cityname);
+    //localStorage.setItem("zipcode", state.zipcode);
 
     
 }

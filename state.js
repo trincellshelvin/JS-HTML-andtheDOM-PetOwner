@@ -20,3 +20,4 @@ state.zipcode = localStorage.getItem("zipcode");
 
 let user = createPetOwner(state.firstname, state.lastname, state.petsname, state.phonenumber, state.email, state.cityname, state.zipcode);
 
+user.render();
